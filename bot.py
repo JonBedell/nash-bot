@@ -38,7 +38,7 @@ async def on_message(message):
     if message.content == WHY_AM_I_LOSING:
         response = random.choice(excuses)
         await message.channel.send(response)
-    elif message.content.startsWith(ROLL_DICE):
+    elif message.content.startswith(ROLL_DICE):
         response = roll_dice(message.content[len(ROLL_DICE):])
         await message.channel.send(response)
 
