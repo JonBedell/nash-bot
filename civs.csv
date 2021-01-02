@@ -1,0 +1,36 @@
+Civ,isActive,civType1,civType2
+Aztecs,1,Infantry,Monk
+Berbers,1,Cavalry,Naval
+Britons,1,Foot Archer,Archer
+Bulgarians,1,Infantry,Cavalry
+Burmese,1,Monk,Elephant
+Byzantines,1,Defense,
+Celts,1,Infantry,Siege
+Chinese,1,Archer,
+Cumans,1,Cavalry,
+Ethiopians,1,Archer,
+Franks,1,Cavalry,
+Goths,1,Infantry,
+Huns,1,Cavalry,
+Incas,1,Infantry,
+Indians,1,Camel,Gunpowder
+Italians,1,Archer,Naval
+Japanese,1,Infantry,
+Khmer,1,Siege,Elephant
+Koreans,1,Defense,Naval
+Lithuanians,1,Cavalry,Monk
+Magyars,1,Cavalry,
+Malay,1,Naval,
+Malians,1,Infantry,
+Mayans,1,Archer,
+Mongols,1,Cavalry Archer,Cavalry
+Persians,1,Cavalry,
+Portuguese,1,Naval,Gunpowder
+Saracens,1,Camel,Naval
+Slavs,1,Infantry,Siege
+Spanish,1,Gunpowder,Monk
+Tatars,1,Cavalry Archer,Archer
+Teutons,1,Infantry,
+Turks,1,Gunpowder,
+Vietnamese,1,Archer,
+Vikings,1,Infantry,Naval
