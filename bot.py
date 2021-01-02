@@ -43,7 +43,7 @@ async def on_message(message):
         response = roll_dice(message.content[len(const.ROLL_DICE):])
         await message.channel.send(response)
     elif message.content.startswith(const.PICK_CIV):
-        response = pick.pick_civ()
+        response = pick.pick_civ(message.content[len(const.ROLL_DICE):])
         await message.channel.send(response)
 
 def roll_dice(num_sides = None):
