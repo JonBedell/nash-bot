@@ -4,14 +4,15 @@ import discord
 import random
 from dotenv import load_dotenv
 
+import const
+import pick
+
 load_dotenv()
+
 TOKEN = os.getenv('DISCORD_TOKEN')
 GUILD = os.getenv('DISCORD_GUILD')
 
 client = discord.Client()
-
-ROLL_DICE = '!roll'
-WHY_AM_I_LOSING = 'WhyAmILosing!'
 
 @client.event
 async def on_ready():
@@ -35,11 +36,14 @@ async def on_message(message):
         '@andrewkaye got Teutons again',
     ]
 
-    if message.content == WHY_AM_I_LOSING:
+    if message.content == const.WHY_AM_I_LOSING:
         response = random.choice(excuses)
         await message.channel.send(response)
-    elif message.content.startswith(ROLL_DICE):
-        response = roll_dice(message.content[len(ROLL_DICE):])
+    elif message.content.startswith(const.ROLL_DICE):
+        response = roll_dice(message.content[len(const.ROLL_DICE):])
+        await message.channel.send(response)
+    elif message.content.startswith(const.PICK_CIV):
+        response = pick.pick_civ(message.content[len(const.ROLL_DICE):])
         await message.channel.send(response)
 
 def roll_dice(num_sides = None):
