@@ -36,6 +36,17 @@ async def on_message(message):
         '@andrewkaye got Teutons again',
     ]
 
+    civ_4_civs = [
+        'Abbasid Dynasty',
+        'Chinese',
+        'English',
+        'French',
+        'Holy Roman Empire',
+        'Delhi Sultanate',
+        'Rus',
+        'Mongols'
+    ]
+
     if message.content == const.WHY_AM_I_LOSING:
         response = random.choice(excuses)
         await message.channel.send(response)
@@ -44,6 +55,9 @@ async def on_message(message):
         await message.channel.send(response)
     elif message.content.startswith(const.PICK_CIV):
         response = pick.pick_civ(message.content[len(const.ROLL_DICE):])
+        await message.channel.send(response)
+    elif message.content.startswith(const.PICK_CIV_4):
+        response = random.choice(civ_4_civs)
         await message.channel.send(response)
 
 def roll_dice(num_sides = None):

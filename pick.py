@@ -29,3 +29,4 @@ def pick_civ(msg):
         pick = 'ERROR: no civs fit parameters or an error has occurred'
 
     return pick
+
